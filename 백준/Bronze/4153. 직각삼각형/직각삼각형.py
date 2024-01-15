@@ -1,5 +1,5 @@
 while True:
-    a,b,c=map(int,input().split())
+    a,b,c=sorted(map(int,input().split()))
     if a==b==c==0: break
-    if a*a+b*b==c*c or a*a+c*c==b*b or b*b+c*c==a*a: print("right")
+    if a*a+b*b==c*c: print("right")
     else: print("wrong")
